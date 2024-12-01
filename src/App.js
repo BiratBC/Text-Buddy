@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar.js";
 import TextForm from "./components/TextForm.js";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import About from "./components/About.js";
+import About from "./components/About.js";
 // import Sidebar from "./components/Sidebar.js";
 import React, { useState } from "react";
 import Alert from "./components/Alert.js";
@@ -40,6 +40,13 @@ function App() {
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
+      //Dynamically adding title
+      // setInterval(() => {
+      //   document.title = "Alert!!!";
+      // }, 1000);
+      // setInterval(() => {
+      //   document.title = "Text Buddy - Home";
+      // }, 2000);
       const radioBtn = document.querySelectorAll(
         'input[name="flexRadioDefault"]'
       );
@@ -78,7 +85,7 @@ function App() {
           showAlert={showAlert}
           color = {color}
         />
-        {/* <About /> */}
+        <About/>
       </div>
     </>
   );
