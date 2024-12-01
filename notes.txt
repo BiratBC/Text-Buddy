@@ -1,0 +1,3 @@
+named import:- export {name} from a modeule
+and to import it import {name1,name2, name3} from module
+default import :- export default "var name" from a modeule2.mjs file to modeule1.mjs file 
